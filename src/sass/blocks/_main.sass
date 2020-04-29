@@ -1,2 +1,49 @@
 .main 
-    background: url('../img/bg/bg_main.jpg') center (center / cover) no-repeat;
+    background: url('../img/bg/bg_main.jpg') center (center / cover) no-repeat
+    padding-top: 39px
+    height: 700px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.menu
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 540px
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    &__link
+        color: #ffffff
+
+.main_slider
+    &__item
+        display: flex!important
+        justify-content: space-between
+        align-items: flex-end
+    &__img
+        display: block
+    &__title
+        font-size: 42px
+        font-weight: 900
+        line-height: 1.14
+        text-align: left
+        color: #ffffff
+        margin-bottom: 27px
+    &__dscr
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: left
+        color: #ffffff
+        max-width: 426px
+        margin-bottom: 39px
+    &__button
+        margin-bottom: 195px
