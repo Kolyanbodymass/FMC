@@ -4,10 +4,12 @@ $(document).ready(function(){
         infinite: true,
         dots: true,
         speed: 300,
-        prevArrow: '<button type="button" class="slick-prev">U+2B9C</button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>'
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>',
+        customPaging : function(slider, i) {
+            var thumb = $(slider.$slides[i]).data();
+            return '<div class="main_slider__paging"></div>';
+            },
     });
 
 });
-
-// <img src="icons/arrow_left.svg">
