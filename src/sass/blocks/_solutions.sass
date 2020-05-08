@@ -6,21 +6,44 @@
         max-width: 755px
         margin-bottom: 25px
     &__slider
-        background: url('../img/solutions_slider/bg_solutions_slider.png') center no-repeat
-    &__tabs
+        padding-top: 100px
+    &__slide
+        img
+            margin: 0 auto
+    ul.slick-dots
         list-style-type: none
         display: flex
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 0
         justify-content: space-between
         border: 1.0px solid #ffffff
         border-radius: 3px
         max-width: 843px
-        margin: 0 auto
+        width: 100%
         padding: 26px 32px
-    &__tab
-        font-size: 14px
-        font-weight: 400
-        color: #ffffff
-        &:hover
-            color: #00c2f0
-            cursor: pointer
-
+        li
+            font-size: 14px
+            font-weight: 400
+            color: #ffffff
+            &:hover
+                color: #00c2f0
+                cursor: pointer
+    .slick-list
+        background: url('../img/solutions_slider/bg_solutions_slider.png') center no-repeat
+        padding: 36px 0 124px 0;
+        height: 560px; 
+    .slick-arrow
+        position: absolute
+        border: none;
+        background-color: inherit;
+        z-index: 5
+        cursor: pointer
+    .slick-prev
+        top: 50%;
+        transform: translateY(-50%);
+    .slick-next
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
