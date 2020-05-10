@@ -1,0 +1,42 @@
+.begine
+    padding: 80px 0
+    &__wrapper
+        width: 302px
+        height: 302px
+        margin: 0 auto 74px auto
+        position: relative
+    &__button
+        margin: 30px auto
+        display: block
+    &__border
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        left: 0px
+        top: 0px
+        right: 0px
+        bottom: 0px
+    &__wrapper::before, &__wrapper::after, &__border:before, &__border::after
+        position: absolute
+        width: 30px
+        height: 30px
+        content: ''
+        border-color: #00c2f0
+        border-style: solid
+    &__wrapper::before
+        left: 0px
+        top: 0px
+        border-width: 1px 0 0 1px
+    &__wrapper::after
+        right: 0px
+        top: 0px
+        border-width: 1px 1px 0 0
+    &__border:before
+        right: 0px
+        bottom: 0px
+        border-width: 0 1px 1px 0
+    &__border::after
+        left: 0px
+        bottom: 0px
+        border-width: 0 0 1px 1px
