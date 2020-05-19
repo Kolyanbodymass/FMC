@@ -21,6 +21,14 @@ $(document).ready(function(){
         customPaging: function(slider, i) {
             var tittle = $(slider.$slides[i]).data('slidertitle');
             return '<a>' + tittle + '</a>';
-          }
+        },
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 });
