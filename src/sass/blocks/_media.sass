@@ -16,10 +16,30 @@
         font-size: 31px
     .main__dscr 
         font-size: 20px
-    // .slick-prev, .slick-next
-    //     display: none
-// @media (max-width: 767px)
-   
+
+
+@media (max-width: 767px)
+    .menu 
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0,.8)
+        transition: .6s all
+        z-index: 10;
+        &_active
+            left: 0
+        &__item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+    .ham 
+        display: block
 // @media (max-width: 575px)
 
 // @media (max-width: 425px)

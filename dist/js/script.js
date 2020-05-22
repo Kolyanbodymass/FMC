@@ -32,3 +32,23 @@ $(document).ready(function(){
         ]
     });
 });
+
+
+/* menu for mobile */
+window.addEventListener('DOMContentLoaded', () => {
+    let menu = document.querySelector('.menu'),
+        menuItem = document.querySelectorAll('.menu_item'),
+        ham = document.querySelector('.ham'),
+        body = document.getElementsByTagName("body")[0];
+
+    ham.addEventListener('click', () => {
+        menu.classList.toggle('menu_active');
+        body.classList.toggle('body_hidden');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.classList.toggle('menu_active');
+        })
+    })
+})
