@@ -74,12 +74,52 @@
             font-size: 35px
     h2
         font-size: 23px
-    .solutions 
+    .solutions
+        padding: 40px 0
         .slick-list
             background: inherit
+            padding: 0
+            height: auto
+        ul.slick-dots
+            padding: 16px
+        ul.slick-dots li
+            font-size: 12px
+        &__slider
+            padding-top: 70px
 
 
-// @media (max-width: 575px)
+@media (max-width: 575px)
+    h2 
+        font-size: 21px
+    .header .countrys 
+        justify-content: center
+    .main__title 
+        margin-bottom: 16px
+    .main .slick-dots 
+        left: 5%
+    .options 
+        background: url(../img/bg/mobile/bg_options_mobile.jpg) center center/cover no-repeat
+        padding: 79px 0 140px 0
+        &__item_left 
+            margin-right: 0
+        &__title 
+            font-size: 21px
+        &__h2
+            margin-bottom: 60px
+    .advantages
+        padding: 54px 0 0 0
+        &__item
+            height: auto
+        &__dscr
+            font-size: 18px
+            line-height: 23px
+        .container
+            padding: 0
+    .footer__wrapper 
+        flex-wrap: wrap
+    .footer__about-company, .footer__modules, .footer__branchs, .footer__about-us
+        margin-bottom: 10px
+
 
 
 // @media (max-width: 425px)
