@@ -37,7 +37,7 @@ $(document).ready(function(){
 /* menu for mobile */
 window.addEventListener('DOMContentLoaded', () => {
     let menu = document.querySelector('.menu'),
-        menuItem = document.querySelectorAll('.menu_item'),
+        menuItem = document.querySelectorAll('.menu__item'),
         ham = document.querySelector('.ham'),
         body = document.getElementsByTagName("body")[0];
 
@@ -49,6 +49,8 @@ window.addEventListener('DOMContentLoaded', () => {
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             menu.classList.toggle('menu_active');
+            body.classList.toggle('body_hidden');
+            ham.classList.remove('active');
         })
     })
 })
